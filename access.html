@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>ACCESS | KISSA officakl website</title>
+	<meta name="description" content="カフェ「KISSA」のアクセスマップと問い合わせフォームが掲載されたページです。">
+	<script src="./js/toggle-menu.js"></script>
+	<link rel="stylesheet" href="./css/common.css">
+	<link rel="stylesheet" href="./css/access.css">
+	<link rel="stylesheet" href="https://fonts.googleapi.copm">
+	<link rel="stylesheet" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat@700&display=swap">
+
+</head>
+
+<body>
+
+	<!-- header ここから -->
+	<header class="header">
+		<div class="header-inner">
+			<a href="./index.html" class="header-logo">
+				<img src="./images/common/logo-header.png" alt="KISSA">
+			</a>
+			<button class="toggle-menu-button"></button>
+			<div class="header-site-menu">
+				<nav class="site-menu">
+					<ul>
+						<li><a href="./concept.html">CONCEPT</a></li>
+						<li><a href="./menu.html"></a></li>
+						<li><a href="./shop.html"></a></li>
+						<li><a href="./access.html"></a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<!-- header ここまで -->
+	<!-- main ここから -->
+	<main class="main">
+		<div class="title">
+			<h1>ACCESS</h1>
+			<p>アクセス・お問い合わせ</p>
+		</div>
+		<div class="map">
+			<h2>アクセスマップ</h2>
+			<iframe src="https://www.google.com/maps/embed" frameborder="0" style="border: 0;" allowfullscreen=""
+				loading="lazy"></iframe>
+		</div>
+		<div class="contact">
+			<h2>お問い合わせフォーム</h2>
+			<form action="#">
+				<dl class="form-area">
+					<dt><span class="required">お名前</span></dt>
+					<dt><input type="text" class="input-text" name="name" required></dt>
+					<dt><span class="required">メールアドレス</span></dt>
+					<dd></dd>
+					<dt>お電話番号</dt>
+					<dd></dd>
+					<dt>お問い合わせ種別</dt>
+					<dd>
+						<select name="genre" id="" class="select-box">
+							<option value="ご予約について" selected>ご予約について</option>
+							<option value="メニューについて">メニューについて</option>
+							<option value="営業時間について">営業時間について</option>
+						</select>
+					</dd>
+					<dt>お客様について</dt>
+					<dd>
+						<label for="" class="radio-button">
+							<input type="radio" name="user-type" value="一般のお客様" checked>
+							一般のお客様
+						</label>
+						<label for="" class="radio-button">
+							<input type="radio" name="user-type" value="お取引先様">
+							お取引先様
+						</label>
+						<label for="" class="radio-button">
+							<input type="radio" name="user-type" value="その他">
+							その他
+						</label>
+					</dd>
+					<dt><span class="required">お問い合わせ内容</span></dt>
+					<dd><textarea name="message" id="" class="message" required></textarea></dd>
+				</dl>
+				<p>ご入力内容を確認の上、お間違いがなけれ[Submit]ボタンを押してください。</p>
+				<button class="submit-button" type="submit">Submit</button>
+			</form>
+		</div>
+	</main>
+	<!-- main ここまで -->
+
+	<!-- footer ここから -->
+	<footer class="footer">
+		<nav class="site-menu">
+			<ul>
+				<li><a href="./concept.html">CONCEPT</a></li>
+				<li><a href="./menu.html">MENU</a></li>
+				<li><a href="./shop.html">SHOP</a></li>
+				<li><a href="./access.html">ACCESS</a></li>
+			</ul>
+		</nav>
+		<a href="./index.html" class="footer-logo">
+			<img src="./images/common/logo-footer.png" alt="KISSA">
+		</a>
+		<p class="footer-tel">TEL 01-2345-6789</p>
+		<p class="footer-time">OPEN Fri-Sun 11:00-16:00</p>
+		<p class="copyright"><small>&copy;Kissa</small></p>
+
+	</footer>
+	<!-- footer ここまで -->
+</body>
+
+</html>
